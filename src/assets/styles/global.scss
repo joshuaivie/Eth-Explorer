@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Gill Sans";
+  src: local("GILLSANS"), url("../fonts/GILLSANS.woff") format("woff"),
+    url("../fonts/GILLSANS.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "Gill Sans", sans-serif !important;
+  min-height: 100vh;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg-light-blue {
+  background-color: $primary-blue;
+}
+
+.bg-dark-blue {
+  background-color: $secondary-blue;
+}
