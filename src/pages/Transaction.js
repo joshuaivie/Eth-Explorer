@@ -54,7 +54,7 @@ function Transaction() {
                 <p className="m-0 text-white">
                   {item.title}
                 </p>
-                <div className="d-flex gap-1 align-center" style={{ lineBreak: 'anywhere' }} >
+                <div className="d-flex gap-1 align-center" style={{ lineBreak: 'anywhere' }}>
                   {state[item.value]}
                   <div className="d-grid align-content-center icon ms-2">
 
