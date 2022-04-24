@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { Routes, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // Pages
 import Homepage from './pages/Homepage';
@@ -23,10 +23,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/transactions/:transactionID" element={<Transaction />} />
-      </Routes>
+      <Switch>
+        <Route path="/transactions/:transactionID"><Transaction /></Route>
+        <Route path="/"><Homepage /></Route>
+      </Switch>
     </div>
   );
 }

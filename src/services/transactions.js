@@ -1,6 +1,6 @@
-const BASE_URL = 'https://api.etherscan.io/';
+const BASE_URL = 'https://api.etherscan.io/api';
 const API_KEY = 'DA3ZRYZTTEMZK52BMWA8RDU9HR8THCBAKY';
-const DEFAULT_ADDRESS = '0x28C6c06298d514Db089934071355E5743bf21d60​';
+const DEFAULT_ADDRESS = '0x28C6c06298d514Db089934071355E5743bf21d60';
 const DEFAULT_ORDER = 'asc';
 const DEFAULT_PAGE = '1';
 const DEFAULT_PAGE_SIZE = '20';
@@ -14,25 +14,15 @@ export default function FetchTransactions({
   blockStart = DEFAULT_BLOCK_START,
   blockEnd = DEFAULT_BLOCK_END,
 }) {
-  const url = `${BASE_URL}
-  ?module=account
-  &action=txlist
-  &address=${walletAddress}
-  &startblock=${blockStart}
-  &endblock=${blockEnd}
-  &page=${page}
-  &offset=${DEFAULT_PAGE_SIZE}
-  &sort=${order}
-  &apikey=${API_KEY}`;
+  const url = `${BASE_URL}?module=account&action=txlist&address=${walletAddress}&startblock=${blockStart}&endblock=${blockEnd}&page=${page}&offset=${DEFAULT_PAGE_SIZE}&sort=${order}&apikey=${API_KEY}`;
+  console.log(url);
   const data = fetch(url)
     .then((res) => res.json().then((json) => {
-      const { result, status } = json;
-
-      if (status === 1) {
-        return result;
-      }
-      throw Error('We could not find any transactions');
+      const { result } = json;
+      return result;
     }))
-    .catch((error) => error);
+    .catch((error) => {
+      throw Error(error);
+    });
   return data;
 }

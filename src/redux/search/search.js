@@ -3,7 +3,7 @@ export const SEARCH_TRANSACTION = 'SEARCH_TRANSACTION';
 export const CLEAR_SEARCH = 'CLEAR_SEARCH';
 
 // Action creators
-export const searchValue = (payload) => ({
+export const searchTransaction = (payload) => ({
   type: SEARCH_TRANSACTION,
   payload,
 });

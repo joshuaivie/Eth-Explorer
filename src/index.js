@@ -12,7 +12,6 @@ import App from './App';
 // Styles
 import './assets/styles/global.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 ReactDOM.render(
   <React.StrictMode>

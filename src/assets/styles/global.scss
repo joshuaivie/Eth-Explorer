@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import "./variables.scss";
 
 @font-face {
@@ -23,7 +24,11 @@ body {
   font-family: "Gill Sans", sans-serif !important;
   min-height: 100vh;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  background: $primary-blue !important;
+}
+
+.font-lato {
+  font-family: "Lato", sans-serif;
 }
 
 .flex {
@@ -40,4 +45,66 @@ button {
 
 .bg-dark-blue {
   background-color: $secondary-blue;
+}
+
+#search-input::placeholder {
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.cards {
+  display: grid;
+  padding: 0 !important;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards .card {
+  padding: 8px;
+  border-radius: 0;
+  background: $dark-blue;
+}
+
+.backChevron {
+  border: none;
+  outline: none;
+}
+
+.icon svg {
+  width: 25px;
+}
+
+.icon-large svg {
+  width: 25%;
+}
+
+.transaction-card {
+  min-height: 300px;
+  background: $dark-blue;
+  border-radius: 0;
+
+  &:nth-of-type(4n),
+  &:nth-of-type(4n - 3) {
+    background: $dark-blue-shaded;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.data-details li {
+  list-style: none;
+}
+
+.data-details li:nth-child(odd) {
+  background-color: $dark-blue;
+}
+
+.data-details li:nth-child(even) {
+  background-color: $dark-blue-shaded;
 }
