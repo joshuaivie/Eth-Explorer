@@ -1,14 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Book Store
+# React Capstone Project - ETHEREUM BLOCKCHAIN EXPLORER
 
-> The Book Store Application is a front end application build using React and Redux. In this project I explore the use of functional components, component lifecycle, event handling, lifting state and react hooks and redux for state management. The application allows users to display a list of books, add a book and remove a selected book.
+> This project uses the [Ether Scan](https://docs.etherscan.io/) API to scan through the ethereuem blockchain for transactions made by binance.
 
 > I hope you enjoy this one!
 
 ## Live Demo
 
-[Book Store App](https://joshuaivie.github.io/BookStore)
+[ETH Explorer](https://joshuaivie.github.io/Eth-Explorer)
 
 ## Built With
 
