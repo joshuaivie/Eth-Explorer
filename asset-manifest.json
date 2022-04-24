@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Eth-Explorer/static/css/main.ac5c7e7a.css",
+    "main.js": "/Eth-Explorer/static/js/main.05a8b84f.js",
+    "static/media/GILLSANS.ttf": "/Eth-Explorer/static/media/GILLSANS.0a4db5a548a37d6e1a65.ttf",
+    "static/media/GILLSANS.woff": "/Eth-Explorer/static/media/GILLSANS.acc164a372e5f2e8aace.woff",
+    "index.html": "/Eth-Explorer/index.html",
+    "main.ac5c7e7a.css.map": "/Eth-Explorer/static/css/main.ac5c7e7a.css.map",
+    "main.05a8b84f.js.map": "/Eth-Explorer/static/js/main.05a8b84f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac5c7e7a.css",
+    "static/js/main.05a8b84f.js"
+  ]
+}
