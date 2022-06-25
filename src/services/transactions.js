@@ -15,7 +15,6 @@ export default function FetchTransactions({
   blockEnd = DEFAULT_BLOCK_END,
 }) {
   const url = `${BASE_URL}?module=account&action=txlist&address=${walletAddress}&startblock=${blockStart}&endblock=${blockEnd}&page=${page}&offset=${DEFAULT_PAGE_SIZE}&sort=${order}&apikey=${API_KEY}`;
-  console.log(url);
   const data = fetch(url)
     .then((res) => res.json().then((json) => {
       const { result } = json;

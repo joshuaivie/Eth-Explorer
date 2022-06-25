@@ -44,9 +44,7 @@ export const fetchedTransactions = (transactions) => ({
 
 // Side Effects
 export const GetTransactions = ({ order }) => async (dispatch) => {
-  console.log('HHH');
   dispatch(gettingTransactions());
-  console.log('HHH');
   try {
     const payload = await FetchTransactions({ order });
     dispatch({
